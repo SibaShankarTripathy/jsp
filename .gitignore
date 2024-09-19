@@ -22,3 +22,58 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Eclipse specific files
+.classpath
+.settings/
+.factorypath
+.project
+.metadata/
+
+# Maven specific files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle specific files
+.gradle/
+build/
+
+# STS specific files
+.springBeans
+
+# Ignore the application.properties file if it contains sensitive information
+# Uncomment the line below if you store sensitive information in application.properties
+# /src/main/resources/application.properties
+
+# Ignore manifest files
+MANIFEST.MF
+
+# Temporary files
+/tmp
+*.tmp
+
+# Maven/Gradle specific files
+/target/
+/build/
+
+#  IDE specific files
+.idea/
+*.iml
+
+# Others
+.DS_Store
+node_modules/
+.env
+
+# Logs and temp files
+logs/
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig

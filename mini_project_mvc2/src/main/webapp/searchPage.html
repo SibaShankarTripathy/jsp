@@ -1,0 +1,20 @@
+<!-- Step - 2 -->
+<!-- This is just a form page and send request to Servlet program after press any button -->
+<form action="empDetails" method="POST" target="frame2"> <!-- Here we mention target="frame2" means result will show in frame 2(down section of welcome page) -->
+	<table style="color: blue; text-align: center" border=1>
+		<tr>
+			<td>Designation: </td>
+			<td><select name="jobType" style="color: red">
+					<option value="clerk">Clerk</option>
+					<option value="manager">Manager</option>
+					<option value="salesman">SalesMan</option>
+					<option value="analyst">Analyst</option>
+					<option value="president">President</option>
+					<option value="TeamLead">TeamLead</option>
+			</select></td>
+		</tr>
+	</table>
+	<br> <input type="submit" name="sbmt1" value="ExcelOutput" style="color: red"> 
+		<input type="submit" name="sbmt1" value="HtmlOutput" style="color: red">
+</form>
+<!-- Now go to model package -->
