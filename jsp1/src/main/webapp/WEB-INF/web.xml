@@ -1,0 +1,5 @@
+<!-- Step - 1  -->
+<!-- This is a Dynamic Web Project -->
+<!-- This web.xml creation also optional  -->
+<!-- Keep in mind while create this web.xml under which folder creating  -->
+<web-app/>
