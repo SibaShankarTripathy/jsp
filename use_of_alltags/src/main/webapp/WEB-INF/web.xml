@@ -1,0 +1,14 @@
+
+<!-- Step -1  -->
+<!-- Creating a url to hit from client -->
+<web-app>
+	<!-- servlet Details -->
+	<servlet>
+		<servlet-name>prog2</servlet-name>
+		<jsp-file>/allTags.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>prog2</servlet-name>
+		<url-pattern>/testurl</url-pattern>
+	</servlet-mapping>
+</web-app>
