@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	id="WebApp_ID" version="6.0">
+
+	<!-- To handle Global Exception Type - 1 (We keep here parent class of exception) -->
+	<!-- <error-page> -->
+	<!-- <exception-type>java.lang.Exception</exception-type> -->
+	<!-- <location>/parentException.jsp</location> -->
+	<!-- </error-page> -->
+
+	<!-- To use above exception tag just un-comment above and comment bellow 
+		all tags -->
+
+	<!-- To handle Global Exception Type - 2 (We will NOT keep here parent class 
+		of exception) -->
+	<error-page>
+		<exception-type>java.lang.NumberFormatException</exception-type>
+		<location>/numberFormatExp.html</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/nullpointerExp.jsp</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>java.lang.ArithmeticException</exception-type>
+		<location>/arithmeticExp.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404code.html</location>
+	</error-page>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/500code.html</location>
+	</error-page>
+
+</web-app>
