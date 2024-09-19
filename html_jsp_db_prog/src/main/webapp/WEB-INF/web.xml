@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+id="WebApp_ID" version="6.0">
+	<display-name>html_jsp_db_prog</display-name>
+	<!-- Step - 1 -->
+	<!-- This bellow line route to start html page -->
+	<welcome-file-list>
+		<welcome-file>student_details.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>studentDetails</servlet-name>
+		<jsp-file>/student_form.jsp</jsp-file>
+
+		<!-- In servlet tag only keep DB Crediential for connection purpose -->
+		<init-param>
+			<param-name>dbDriver</param-name>
+			<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dbUrl</param-name>
+			<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dbUserName</param-name>
+			<param-value>shankar</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dbPassword</param-name>
+			<param-value>Shankar1234</param-value>
+		</init-param>
+
+	</servlet>
+
+	<!-- Mapping this jsp file with url -->
+	<servlet-mapping>
+		<servlet-name>studentDetails</servlet-name>
+		<url-pattern>/student_form</url-pattern>
+	</servlet-mapping>
+
+</web-app>

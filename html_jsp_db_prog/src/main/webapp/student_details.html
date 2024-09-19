@@ -1,0 +1,30 @@
+<!-- Step - 2 create this html -->
+
+<h1 style='color:blue' align="center">Student Details Form</h1>
+<form style='color:blue' align="centre" action="student_form" method="POST">
+	<tabe>
+		<tr>
+			<td>Student ID: </td>
+			<td><input type="number" name="sid"></td>
+		</tr>
+		<tr>
+			<td>Student Name: </td>
+			<td><input type="text" name="sname"></td>
+		</tr>
+		<tr>
+			<td>Student Age: </td>
+			<td><input type="number" name="sage"></td>
+		</tr>
+		<tr>
+			<td>Student Email: </td>
+			<td><input type="email" name="smail"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" name="submitButton" value="Save"></td>
+			<td><input type="reset" value="Reset"></td>
+		</tr>
+	</tabe>
+</form>
+<br>
+<button style="color:blue; text-align: center"><a href="student_form?submitButton=test">Student Details</a></button>
+<!-- href="student_form?submitButton=test" here I am mention testRetrieve because to check if-else in .jsp file -->
